@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div id="calculator">
-        <input id="display">
+        <input id="display" readonly>
         <div id="keys">
             <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
             <button onclick="appendToDisplay('7')">7</button>
@@ -27,14 +27,12 @@
             <button onclick="appendToDisplay('0')">0</button>
             <button onclick="appendToDisplay('.')">.</button>
             <button onclick="calculate()">=</button>
-            <button onclick="clearDisplay()" class="operator-btn">C</button>
-
+            <button onclick="percent('%')" class="operator-btn">%</button>
+            <button onclick="clearDisplay()" class="clear-btn">C</button>
+            <button onclick="backspace('Del')" class="clear-btn">Del</button>
 
         
-            
-
-
-        </div>
+         </div>
 
     </div>
 
